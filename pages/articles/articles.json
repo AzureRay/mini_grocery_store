@@ -1,3 +1,5 @@
 {
-  "navigationBarTitleText": "精选文章"
+  "navigationBarTitleText": "精选文章",
+  "navigationBarBackgroundColor": "#555",
+  "navigationBarTextStyle": "white"
 }
