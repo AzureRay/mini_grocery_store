@@ -50,5 +50,13 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  enter:function(e){
+    wx.redirectTo({
+      url: '/pages/articles/articles',
+    })
+    // wx.navigateTo({
+    //   url: '/pages/articles/articles',
+    // })
   }
 })

@@ -7,7 +7,7 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
+  <view class="usermotto" catchtap='enter'>
     <text class="user-motto">进入杂货铺</text>
   </view>
 </view>
