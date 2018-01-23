@@ -76,7 +76,11 @@ Page({
 
   },
   enterArticleDetail:function(event){
+    // 小写postId
     var postId = event.currentTarget.dataset.postid;
-    console.log(postId);
+    wx.navigateTo({
+      // url: '/pages/articles/article-detail/article-detail'
+       url: 'article-detail/article-detail?id=' + postId
+    })
   }
 })

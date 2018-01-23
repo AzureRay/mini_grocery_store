@@ -2,12 +2,12 @@
   "pages":[
     "pages/index/index",
     "pages/articles/articles",
+    "pages/articles/article-detail/article-detail",
     "pages/movies/movies"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "迷你杂货铺",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#555",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "迷你杂货铺"
   }
 }
