@@ -1,6 +1,7 @@
+<!-- <import src="/pages/articles/article-item/article-template/article-item-template.wxml" /> -->
 <import src="article-item/article-template/article-item-template.wxml" />
-<view>
 
+<view>
   <swiper indicator-dots="true" autoplay="true">
     <block wx:for="{{imgUrls}}">
       <swiper-item>
@@ -8,11 +9,11 @@
       </swiper-item>
     </block>
   </swiper>
-  
+
   <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
-        <!--//template-->
-        <view data-postId="{{item.postId}}">
-             <template is="postItem" data="{{...item}}"/>
-        </view>
-</block>
+    <!--//template-->
+    <view catchtap="enterArticleDetail" data-postId="{{item.postId}}">
+      <template is="postItem" data="{{...item}}" />
+    </view>
+  </block>
 </view>
