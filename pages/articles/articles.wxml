@@ -1,10 +1,18 @@
-<!-- articles list page -->
-<view class="">
+<import src="article-item/article-template/article-item-template.wxml" />
+<view>
+
   <swiper indicator-dots="true" autoplay="true">
     <block wx:for="{{imgUrls}}">
       <swiper-item>
-        <image src="{{item}}" class="slide-image"/>
+        <image src="{{item}}" class="slide-image" />
       </swiper-item>
     </block>
   </swiper>
+  
+  <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
+        <!--//template-->
+        <view data-postId="{{item.postId}}">
+             <template is="postItem" data="{{...item}}"/>
+        </view>
+</block>
 </view>

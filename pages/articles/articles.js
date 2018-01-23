@@ -1,9 +1,13 @@
+var postsData = require('../../data/articles-data.js')
+
 Page({
-  
+
   /**
    * 页面的初始数据
    */
   data: {
+    //小程序总是会读取data对象来做数据绑定，这个动作我们称为动作A
+    // 而这个动作A的执行，是在onLoad函数执行之后发生的
     imgUrls: [
       'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
@@ -15,6 +19,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // this.data.postList = postsData.postList
+    this.setData({
+      postList: postsData.postList
+    });
 
   },
 
